@@ -61,7 +61,7 @@ grpcio==1.25.0
 gspread==3.1.0
 gspread-dataframe==3.0.3
 h5py==2.10.0
-httplib2==0.13.1
+httplib2==0.18.0
 idna==2.8
 image==1.5.32
 imageio==2.1.2

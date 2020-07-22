@@ -1,0 +1,110 @@
+body {
+    background-color: #000839 !important;
+    font-family: 'Poppins' !important;
+    font-weight: bold;
+}
+.vector-back{
+    position: absolute;
+    z-index: 0;
+}
+
+.vector-back-upper{
+    position: relative;
+    z-index: 0;
+    background: no-repeat url("../static/upper.png");
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 850px;
+}
+
+.block{
+    z-index: 2;
+    color: white;
+    position: relative;
+}
+
+.left-block{
+    width:50%;
+}
+
+.header{
+    font-size: 100px;
+    line-height: 150px;
+}
+
+.upper-text{
+    font-size: 40px;
+    line-height: 72px;
+}
+
+svg{
+    width: 100%;
+    height: inherit;
+}
+
+.settings{
+    position: relative;
+    color: white;
+    background-color: rgba(0, 168, 204, 0.31);
+    border-radius: 1.5rem;
+}
+
+.upload{
+    position: relative;
+    background-color: white;
+    border-radius: 3.5rem;
+    display: flex;
+    align-items: center; 
+}
+
+tr{
+    color: white;
+    opacity: 1 !important;
+    font-size: 1.5rem;
+}
+
+td{
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+input{
+    width: 7rem;
+}
+
+label{
+    margin-bottom: 0px !important;
+}
+
+.upload-button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 2px dashed;
+    vertical-align: middle;
+    height: 50%;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.upload-text{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.compare-block{
+    position: absolute; 
+    background-color: #ffc107; 
+    z-index: 5; 
+    border: 2px dashed black;
+    color: black;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.hide {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}

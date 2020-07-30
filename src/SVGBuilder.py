@@ -1,4 +1,4 @@
-import cairosvg
+#import cairosvg
 import random
 
 
@@ -74,8 +74,8 @@ class SVGBuilder:
         with open(path, 'w') as f:
             f.write(self.get_svg_text())
             
-    def save_as_png(self, path):
-        cairosvg.svg2png(bytestring=self.get_svg_text(), write_to=path)
+    # def save_as_png(self, path):
+    #     cairosvg.svg2png(bytestring=self.get_svg_text(), write_to=path)
             
 
 

@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24;
+}
+
 body{
     background: #f8f8f8;
 }
 .default_block{
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    padding: 2rem;
-    max-width: 400px;
-    padding: 2rem;
-    border-radius: 7px;
+    max-width: 300px;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
     box-shadow: 0 0 10px black;
-    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+label{
+    margin: 0;
 }
 
 .big_form{
@@ -19,20 +28,29 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
         .secectors{
-            background: #fffbfb ;
+            background: #ffffff ;
                 div{
                     display: flex;
                     justify-content: space-between;
                     flex-direction: row;
+                    align-items: center;
+                    height: 40px;
                         input{
                             width: 20%;
                             min-width: 40px;
                             text-align: center;
                         }
+                      
                 }
 
         }
         .load_files{
-            
+            background: #ffffff;
+                .upload{
+                    display: flex;
+                    height: 100%;
+                    text-align: center;
+                    align-items: center;
+                }
         }
 }

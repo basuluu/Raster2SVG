@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24;
+}
+
 body {
   background: #f8f8f8;
 }
@@ -10,14 +16,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 400px;
-  padding: 2rem;
-  max-width: 400px;
-  padding: 2rem;
-  border-radius: 7px;
+  max-width: 300px;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
-  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+label {
+  margin: 0;
 }
 
 .big_form {
@@ -36,7 +44,7 @@ body {
 }
 
 .big_form .secectors {
-  background: #fffbfb;
+  background: #ffffff;
 }
 
 .big_form .secectors div {
@@ -50,11 +58,30 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
 }
 
 .big_form .secectors div input {
   width: 20%;
   min-width: 40px;
   text-align: center;
+}
+
+.big_form .load_files {
+  background: #ffffff;
+}
+
+.big_form .load_files .upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -28,9 +28,17 @@
                         <label for="pieces_size">Max size of pieces</label>
                         <input type="number" id="pieces_size" value="2" min="1">
                     </div>
+                    <div class="sel_block">
+                       <button type="submit" class="btn btn-info">Start</button>
+                    </div>
                 </div>
-                <div class="load_files default_block">
-
+                <div class="load_files default_block" id="myId">
+                    <label class="upload" for="file-upload"> 
+                        <span id="import-img">
+                            Click to upload your raster image!
+                        </span>
+                    </label>
+                    <input id="file-upload" type="file" name="file" value="kek" accept="image/x-png,image/jpeg,image/jpg" style="display: none;" onchange='uploadFile(this)'>  
                 </div>
             </div>
         </form>

@@ -8,6 +8,10 @@ body {
   background: #f8f8f8;
 }
 
+.description .title {
+  margin: 40px 0 40px 0;
+}
+
 .default_block {
   display: -webkit-box;
   display: -ms-flexbox;

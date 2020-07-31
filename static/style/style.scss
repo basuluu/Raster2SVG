@@ -8,6 +8,11 @@ html{
 body{
     background: #f8f8f8;
 }
+.description{
+    .title{
+        margin: 40px 0 40px 0;
+    }
+}
 .default_block{
     display: flex;
     flex-direction: column;
@@ -40,7 +45,6 @@ label{
                             min-width: 40px;
                             text-align: center;
                         }
-                      
                 }
 
         }

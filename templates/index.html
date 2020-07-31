@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/slider.css">
     <link rel="stylesheet" href="/static/style/style.css">
     <title>Svg captions</title>
 </head>
 <body>
 
-    <div class="container">
+    <main class="container">
+        <div class="description">
+            <div class="title"><h1>SVG converter</h1></div>
+            <div class="row">
+                <div class="col-md-6"><h3>Convert all raster img</h3></div>
+                <div class="col-md-6">
+                    <ol>
+                        <li>Upload your raster image</li>
+                        <li>Set settings</li>
+                        <li>Click Start and wait a bit<br>
+                        (sometimes it takes about five minutes)</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
         <form action="/convert" method="post" id="start" enctype='multipart/form-data'>
             <div class="big_form">
                 <div class="secectors default_block">
@@ -42,7 +57,7 @@
                 </div>
             </div>
         </form>
-    </div>
+    </main>
 
 
 

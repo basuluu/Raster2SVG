@@ -1,0 +1,38 @@
+body{
+    background: #f8f8f8;
+}
+.default_block{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 2rem;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+}
+
+.big_form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+        .secectors{
+            background: #fffbfb ;
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                        input{
+                            width: 20%;
+                            min-width: 40px;
+                            text-align: center;
+                        }
+                }
+
+        }
+        .load_files{
+            
+        }
+}

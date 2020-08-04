@@ -1,15 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 html {
   font-family: 'Roboto', sans-serif;
-  font-size: 24;
+  font-size: 22px;
 }
 
 body {
-  background: #f8f8f8;
+  background: #211370;
+}
+
+.description {
+  color: white;
 }
 
 .description .title {
   margin: 40px 0 40px 0;
+}
+
+.description .description-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .default_block {
@@ -20,12 +33,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 300px;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
   margin-top: 20px;
+  max-width: 400px;
 }
 
 label {
@@ -36,9 +49,9 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -65,7 +78,7 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40px;
+  height: 70px;
 }
 
 .big_form .secectors div input {
@@ -87,5 +100,23 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  .big_form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+svg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

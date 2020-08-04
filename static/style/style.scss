@@ -2,25 +2,30 @@
 
 html{
     font-family: 'Roboto', sans-serif;
-    font-size: 24;
+    font-size: 22px;
 }
-
+$color: white;
 body{
-    background: #f8f8f8;
+    background: #211370;
 }
 .description{
+    color: $color;
     .title{
         margin: 40px 0 40px 0;
+    }
+    .description-block{
+        display: flex;
+        justify-content: center;
     }
 }
 .default_block{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     margin-top: 20px;
+    max-width: 400px;
 }
 
 label{
@@ -29,7 +34,7 @@ label{
 
 .big_form{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
         .secectors{
@@ -39,14 +44,13 @@ label{
                     justify-content: space-between;
                     flex-direction: row;
                     align-items: center;
-                    height: 40px;
+                    height: 70px;
                         input{
                             width: 20%;
                             min-width: 40px;
                             text-align: center;
                         }
                 }
-
         }
         .load_files{
             background: #ffffff;
@@ -57,4 +61,15 @@ label{
                     align-items: center;
                 }
         }
+    @media (max-width: 767px){
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
+
+svg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }

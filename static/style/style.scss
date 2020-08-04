@@ -6,16 +6,20 @@ html{
 }
 $color: white;
 body{
-    background: #211370;
+    background: #000839;
 }
 .description{
     color: $color;
     .title{
         margin: 40px 0 40px 0;
     }
-    .description-block{
-        display: flex;
-        justify-content: center;
+    .description-block:nth-child(2){
+       display: flex;
+       justify-content: flex-end;
+       padding-left: 0;
+            @media (max-width: 767px){
+               justify-content: flex-start;
+            }
     }
 }
 .default_block{
@@ -37,6 +41,7 @@ label{
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 50px;
         .secectors{
             background: #ffffff ;
                 div{
@@ -69,7 +74,23 @@ label{
 
 svg{
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top: 0;
+    left: 0;
     z-index: -1;
+  }
+
+  circle{
+
+    animation-name: rout;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes rout{
+    30%{
+        transform: scale(0.5);
+    }
+    70%{
+        transform: scale(1.5);  
+    }
   }

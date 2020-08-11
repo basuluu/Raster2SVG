@@ -7,6 +7,7 @@ import numpy as np
 # TODO: think about corners of not rectangle figure
 # TODO: still have bug of white lines beside figures
 
+# Collect all outlines of each color-pixel group
 def trace(img):
     img_gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
     outlines = []

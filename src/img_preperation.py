@@ -1,7 +1,7 @@
 from sklearn.cluster import MiniBatchKMeans
 import numpy as np
-import argparse
 import cv2
+
 from app_exception import *
 
 

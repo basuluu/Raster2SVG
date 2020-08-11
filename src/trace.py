@@ -1,7 +1,7 @@
+from copy import deepcopy
+
 import cv2
 import numpy as np
-
-from copy import deepcopy
 
 
 # TODO: think about corners of not rectangle figure

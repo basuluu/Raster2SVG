@@ -1,5 +1,6 @@
-import cairosvg
 import random
+
+import cairosvg
 
 
 class SVGBuilder:

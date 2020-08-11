@@ -1,12 +1,12 @@
-from scipy.ndimage import label, find_objects
+from copy import deepcopy
+
 import cv2 
 import numpy as np
+
 from img_preperation import img_quantize, img_blur, read_img
 from spline import Spline
-from outline import get_outline_points
 from SVGBuilder import SVGBuilder
-from copy import deepcopy
-from trace import *
+from trace import trace
 
 
 #TODO: not interpolate corner point
@@ -24,7 +24,9 @@ def pipe(img_path, colors_num=16, blur=True, max_pieces_size=0):
     svg.create_canvas(width=rows, height=cols)
 
     outlines = trace(img)
+    draw_outlines(svg, outlines)
 
+def draw_outlines(svg, outlines):
     # We need to sort outlines, because one outline can cover other outline
     outlines = sorted(outlines, key=lambda elem: min(elem['outline_points']))
     for outline_obj in outlines:
@@ -34,7 +36,7 @@ def pipe(img_path, colors_num=16, blur=True, max_pieces_size=0):
         else:
             outline_on_img = Spline.get_cubic_b_spline_points(np.array(outline_points))  
             svg.add_spline_element(outline_on_img, outline_obj['fill'])
-
+            
     svg.save_as_svg('vot-eto-da-both.svg')
 
 

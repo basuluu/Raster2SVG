@@ -1,9 +1,11 @@
+import sys
+sys.path.insert(0, "src")
+
 from flask import Flask
 from flask import render_template
 from flask import request
 from werkzeug.utils import secure_filename
-import sys
-sys.path.insert(0, "src")
+
 import pipe
 from app_exception import *
 

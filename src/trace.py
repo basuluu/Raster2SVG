@@ -1,4 +1,3 @@
-from scipy.ndimage import label
 import cv2
 import numpy as np
 

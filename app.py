@@ -4,7 +4,7 @@ from flask import request
 from werkzeug.utils import secure_filename
 import sys
 sys.path.insert(0, "src")
-import convert
+import pipe
 from app_exception import *
 
 
@@ -35,7 +35,7 @@ def start_convert():
         f_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(f_path)
         try:
-            convert.convert(f_path, colors_num=colors_num, blur=blur, max_pieces_size=max_pieces_size)
+            pipe.pipe(f_path, colors_num=colors_num, blur=blur, max_pieces_size=max_pieces_size)
             with open('vot-eto-da-both.svg') as f:
                 vector = f.read()
                 return {'status': 'OK', 'raster': f'../{f_path}', 'vector': vector}
@@ -66,8 +66,8 @@ def get_svg():
     return Response(
         svg,
         mimetype="image/svg+xml",
-        headers={"Content-disposition":
-                 "attachment; filename=ouput.svg"})
+        headers={"Content-disposition":"attachment; filename=ouput.svg"}
+    )
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='8001', debug=True)
